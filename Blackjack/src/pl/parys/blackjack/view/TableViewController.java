@@ -160,6 +160,7 @@ public class TableViewController {
 		Optional<ButtonType> result = alert.showAndWait();
 		//W tym miejscu gracz i krupier dostaja nowe karty, czysci sie okno wyswietlajace 
 		//karty, punkty sa zerowane
+		//
 		if (result.get() == buttonNew) {
 			showPlayerCards.getChildren().clear();
 			showCroupierCards.getChildren().clear();
@@ -190,6 +191,7 @@ public class TableViewController {
 		Optional<ButtonType> result = wonGame.showAndWait();
 		//W tym miejscu gracz i krupier dostaja nowe karty, czysci sie okno wyswietlajace 
 		//karty, punkty sa zerowane
+		//
 		if (result.get() == buttonNew) {
 			showPlayerCards.getChildren().clear();
 			showCroupierCards.getChildren().clear();
