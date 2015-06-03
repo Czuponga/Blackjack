@@ -158,6 +158,8 @@ public class TableViewController {
 		alert.getButtonTypes().setAll(buttonNew, buttonEx);
 
 		Optional<ButtonType> result = alert.showAndWait();
+		//W tym miejscu gracz i krupier dostaja nowe karty, czysci sie okno wyswietlajace 
+		//karty, punkty sa zerowane
 		if (result.get() == buttonNew) {
 			showPlayerCards.getChildren().clear();
 			showCroupierCards.getChildren().clear();
@@ -172,6 +174,7 @@ public class TableViewController {
 		}
 	}
 
+	
 	private void wonGameAlert() {
 		Alert wonGame = new Alert(AlertType.CONFIRMATION);
 		wonGame.setHeaderText("Wygra³eœ!");
@@ -185,6 +188,8 @@ public class TableViewController {
 		wonGame.getButtonTypes().setAll(buttonNew, buttonEx);
 
 		Optional<ButtonType> result = wonGame.showAndWait();
+		//W tym miejscu gracz i krupier dostaja nowe karty, czysci sie okno wyswietlajace 
+		//karty, punkty sa zerowane
 		if (result.get() == buttonNew) {
 			showPlayerCards.getChildren().clear();
 			showCroupierCards.getChildren().clear();
