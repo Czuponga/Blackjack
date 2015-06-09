@@ -110,7 +110,6 @@ public class TableViewController {
 
 		if (playerCard.getCardValue() == 1)
 			player.setStatus("AS");
-
 		player.setCards(playerCard);
 		Image img = new Image(
 				TableViewController.class
