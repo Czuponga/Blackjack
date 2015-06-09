@@ -6,6 +6,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -30,7 +31,14 @@ public class TableViewController {
 	private HBox showPlayerCards;
 	@FXML
 	private HBox showCroupierCards;
+	@FXML
+	private Button getC;
+	@FXML
+	private Button stand;
+	@FXML
+	private Button sBet;
 
+	
 	private Table table;
 	private Player player;
 	private Card playerCard;
@@ -46,11 +54,19 @@ public class TableViewController {
 	@FXML
 	private void initialize() {
 		showPlayer(player);
+		sBet.setVisible(false);
+		stand.setVisible(false);
+		getC.setVisible(false);
+		bet.setVisible(false);
 	}
 
 	@FXML
 	private void shuffleDeck() {
 		table.shuffleCards();
+		sBet.setVisible(true);
+		getC.setVisible(true);
+		bet.setVisible(true);
+		stand.setVisible(true);
 	}
 
 	@FXML

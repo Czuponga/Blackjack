@@ -10,7 +10,7 @@ public class Player {
 	private int money;
 	private String status;
 	private int bet;
-	
+
 	public Player(String name, int money) {
 		this.name = name;
 		this.money = money;

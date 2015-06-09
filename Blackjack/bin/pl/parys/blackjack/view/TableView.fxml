@@ -13,11 +13,10 @@
       <Pane layoutX="556.0" layoutY="173.0" prefHeight="600.0" prefWidth="244.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="556.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#shuffleDeck" text="Tasuj talię" />
-            <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#getCard" text="Dobierz" />
-            <Button layoutX="83.0" layoutY="561.0" mnemonicParsing="false" onAction="#stand" text="Nie dobieraj" />
-            <Button layoutX="178.0" layoutY="561.0" mnemonicParsing="false" text="Podwój" />
+            <Button fx:id="getC" layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#getCard" text="Dobierz" />
+            <Button fx:id="stand" layoutX="83.0" layoutY="561.0" mnemonicParsing="false" onAction="#stand" text="Nie dobieraj" />
             <TextField fx:id="bet" layoutX="14.0" layoutY="519.0" promptText="Twój zakład" />
-            <Button layoutX="178.0" layoutY="519.0" mnemonicParsing="false" onAction="#setBet" text="Postaw" />
+            <Button fx:id="sBet" layoutX="178.0" layoutY="519.0" mnemonicParsing="false" onAction="#setBet" text="Postaw" />
             <Label layoutX="14.0" layoutY="491.0" text="Pozostało żetonów:" />
             <Label fx:id="playerTokens" layoutX="123.0" layoutY="491.0" text="Label" />
          </children></Pane>
