@@ -120,6 +120,7 @@ public class TableViewController {
 		setPlayerScore(playerCard);
 		if (player.getScore() > 21) {
 			endGameAlert();
+			
 		} else if (player.getScore() == 21) {
 			wonGameAlert();
 		}
